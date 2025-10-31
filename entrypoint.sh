@@ -1,4 +1,7 @@
 #!/bin/sh
+# `-e` -- exit on the first error, don't resume.
+# `-x` -- print each executed command.
+set -ex
 
 ipfs init
 ipfs daemon &
